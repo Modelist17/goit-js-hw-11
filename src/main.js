@@ -30,7 +30,7 @@ form.addEventListener('submit', async (e) => {
   searchParams.q = inputValue;
   
   try {
-    const images = await getPhotoByName(searchParams);
+    const images = await getPixabayImages(searchParams);
     handleApiResponse(images);
   } catch (error) {
     console.error(error);
@@ -45,7 +45,7 @@ loadMoreButton.addEventListener('click', async () => {
   searchParams.page++;
   
   try {
-    const images = await getPhotoByName(searchParams);
+    const images = await getPixabayImages(searchParams);
     handleApiResponse(images);
   } catch (error) {
     console.error(error);
