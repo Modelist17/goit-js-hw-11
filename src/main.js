@@ -5,7 +5,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { renderGallery, clearGallery, showErrorMessage, checkLoadMore } from './js/render-functions.js';
-import { getPhotoByName } from './js/pixabay-api.js';
+import { getPixabayImages } from './js/pixabay-api.js';
 
 const form = document.querySelector('.form');
 const gallery = document.querySelector('.gallery');
