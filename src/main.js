@@ -10,7 +10,7 @@ import { getPixabayImages } from './js/pixabay-api.js';
 const form = document.querySelector('.form');
 const gallery = document.querySelector('.gallery');
 const loader = document.querySelector('.loader');
-const loadMoreButton = document.querySelector('.load-more');
+const loadMoreButton = document.querySelector('.load-more-btn');
 
 loader.style.display = 'none';
 const searchParams = {
